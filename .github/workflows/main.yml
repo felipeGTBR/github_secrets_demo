@@ -25,7 +25,7 @@ jobs:
 
       - name: Executar aplicação
         env:
-          MENSAGEM_SECRETA: "Minha mensagem secreta"
+          VAR_APP_SECRET: ${{ secrets.VAR_APP_SECRET }}
         run: |
           cd app
           node server.js

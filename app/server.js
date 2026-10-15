@@ -1,7 +1,7 @@
-const mensagem = process.env.MENSAGEM_SECRETA;
+const mensagem = process.env.VAR_APP_SECRET;
 
 if (!mensagem) {
-    console.error("MENSAGEM_SECRETA não foi configurada.");
+    console.error("VAR_APP_SECRET não foi configurada.");
     process.exit(1);
 }
 
